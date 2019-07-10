@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    width: 640px;
+    height: 360px;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+}
+
+.window img {
+    position: absolute;
+    transition: all 0.8s;
+}
+
+.stay {
+    transform: translateX(100%)
+}
+
+.enter {
+    z-index: 1;
+    transform: translateX(0)
+}
+
+.leave {
+    transform: translateX(-100%)
+}
